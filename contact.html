@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<!-- CSS links
+	================================================== -->
+	<link rel="stylesheet" href="css/default.css"> <!--- for icons and fonts of the html page-->
+	<link rel="stylesheet" href="css/layout.css"> <!--- the style of the page-->
+	
+</head>
+
+<body>
+<nav id="nav-wrap">
+         <ul id="nav" class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+	        <li><a href="resume.html">Resume</a></li>
+            <li><a href="ResumeVideo.html">Resume Video</a></li>
+            <li  class="current"><a href="contact.html">Contact</a></li>
+         </ul> <!-- end nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+	<!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="mailto:farah.balaha@gmail.com?" method="POST" id="contactForm" name="contactForm"
+			   enctype="text/plain">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span>*</span></label>
+						   <input type="text" value="" size="30" id="contactName" name="contactName" required>
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span>*</span></label>
+						   <input type="text" value="" size="30" id="contactEmail" name="contactEmail"required>
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="30" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span>*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" required></textarea>
+                  </div>
+				  
+                  <div>
+                    <input type="submit" name = "submit" value="Send" style="margin-bottom: 40px; width: 130px; height: 60px; font-size:20px" >
+					<input type="reset" name="reset" value="Clear Form" style="width: 150px; height: 60px; font-size:20px"/>
+					</div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+				<div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				<div id="message-success">
+					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				</div>
+
+            </div>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   
+</body>
+
+</html>
